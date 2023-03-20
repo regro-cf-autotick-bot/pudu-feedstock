@@ -1,11 +1,11 @@
-About pudu
-==========
+About pudu-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pudu-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pudu-py/pudu
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pudu-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for explainability of machine learinng algorithms in an agnostic, deterministic, and simple way.
 
