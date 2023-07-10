@@ -1,5 +1,5 @@
 {% set name = "pudu" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d9ca538ae0689f589a5195bc038da95a23d60d32e2f2a9519927db68899a4958
+  sha256: 0edd4d5fba040d53095ba001739abfc2e733e5ef2cb1799f3df43d82689a0d9a
 
 build:
   number: 0
