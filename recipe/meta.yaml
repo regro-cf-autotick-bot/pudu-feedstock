@@ -1,5 +1,5 @@
 {% set name = "pudu" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 6803e3f29a83bbb03c9af58d27c1933b3cf7c8dbbd6730ad6a225945be25c562
+  sha256: 7eb0c21a966b0e960e6bc277783c03439a5065280095409b2ad52be695c9811b
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - python >=3.6
     - scikit-learn
     - spectrapepper
-    - tensorflow
+    - tensorflow==2.11
 
 test:
   imports:
