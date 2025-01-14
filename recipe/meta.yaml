@@ -10,24 +10,26 @@ source:
   sha256: 7eb0c21a966b0e960e6bc277783c03439a5065280095409b2ad52be695c9811b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn
     - spectrapepper
     - tensorflow ==2.11
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pudu
 
